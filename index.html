@@ -2,43 +2,118 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinterio</title>
-    <!-- Google Font CDN -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Extend Tailwind with custom font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
+  <!-- Google Font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Extend Tailwind with custom font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
-    <!-- Font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+  <!-- Font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Tailwind and daisyUi CDN link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind and daisyUi CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="font-manrope">
-<!-- header section start -->
-<header></header>
-<!-- header section end -->
+  <!-- header section start -->
+  <header class=" bg-[#F9F9F9] lg:pb-28">
 
-<!-- main section start -->
-<main></main>
-<!-- main section end -->
+    <!-- navbar section start -->
+    <nav class="pt-4 md:pt-6 container mx-auto">
+      <div class="navbar">
+        <div class="navbar-start">
+          <i class="fa-solid fa-arrow-right-long rotate-[-45deg] mr-1 rounded-full p-2 md:p-3 bg-[#ABEF5F]"></i>
+          <h6><a href="#" class="text-2xl font-extrabold md:text-3xl lg:text-4xl flex-1">Rinterio</a></h6>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#"
+                class="font-bold xl:text-lg text-[#737373] hover:text-black hover:duration-900 hover:animate-bounce hover:ease-in-out">Home</a>
+            </li>
+            <li><a href="#"
+                class="font-bold xl:text-lg text-[#737373] hover:text-black hover:duration-900 hover:animate-bounce hover:ease-in-out">Services</a>
+            </li>
+            <li><a href="#"
+                class="font-bold xl:text-lg text-[#737373] hover:text-black hover:duration-900 hover:animate-bounce hover:ease-in-out">Portfolio</a>
+            </li>
+            <li><a href="#"
+                class="font-bold xl:text-lg text-[#737373] hover:text-black hover:duration-900 hover:animate-bounce hover:ease-in-out">Blogs</a>
+            </li>
+            <li><a href="#"
+                class="font-bold xl:text-lg text-[#737373] hover:text-black hover:duration-900 hover:animate-bounce hover:ease-in-out">Contact
+                Us</a></li>
+          </ul>
+        </div>
 
-<!-- footer section start -->
-<footer></footer>
-<!-- footer section end -->
+
+        <div class="navbar-end gap-4">
+          <i
+            class="fa-solid fa-magnifying-glass hidden md:block border bg-white md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 rounded-full xl:text-2xl md:text-2xl lg:text-lg text-center md:p-1 xl:pt-1"></i>
+          <i
+            class="fa-solid fa-cart-shopping hidden md:block border bg-white md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 rounded-full xl:text-2xl md:text-2xl lg:text-lg text-center md:p-1 xl:pt-1"></i>
+          <button class="btn hidden md:block font-extrabold text-lg rounded-full bg-[#ABEF5F]">Book Consult<i
+              class="fa-solid fa-arrow-right-long rotate-[-45deg] md:ml-2 p-2 rounded-full bg-slate-800 text-white"></i></button>
+        </div>
+
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-solid fa-bars text-lg border bg-white w-10 h-10 rounded-full flex items-center justify-center"></i>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content border bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow text-white ">
+            <li><a class="hover:text-red-400" href="#">Home</a></li>
+            <li><a class="hover:text-red-400" href="#">Services</a></li>
+            <li><a class="hover:text-red-400" href="#">Portfolio</a></li>
+            <li><a class="hover:text-red-400" href="#">Blogs</a></li>
+            <li><a class="hover:text-red-400" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- banner section start -->
+    <section class="text-center">
+      <div class="flex items-center justify-center p-6 md:p-0">
+        <img src="assets/banner.png" alt="banner_image">
+      </div>
+      <div class="px-4 md:px-16 lg:px-12 md:mt-4 xl:mt-6">
+        <h1 class="text-3xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a striking
+          appearance</h1>
+        <p class="font-medium mt-4 lg:mt-8 lg:w-2/3 mx-auto">The barn house captivates with its blend of rustic charm
+          and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
+          space with natural light.</p>
+        <button class="w-full md:w-52 mt-4 lg:mt-6 btn rounded-full text-xl font-bold bg-[#befe76]"><a href="#">View
+            Details<i
+              class="fa-solid fa-arrow-right-long rotate-[-45deg] ml-2 bg-[#7ed718] rounded-full p-2"></i></a></button>
+      </div>
+    </section>
+    <!-- banner section end -->
+  </header>
+  <!-- header section end -->
+
+  <!-- main section start -->
+  <main class="container mx-auto">
+
+  </main>
+  <!-- main section end -->
+
+  <!-- footer section start -->
+  <footer></footer>
+  <!-- footer section end -->
 </body>
 
 </html>
