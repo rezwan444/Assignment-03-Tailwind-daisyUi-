@@ -16,6 +16,12 @@
     .font-manrope {
       font-family: 'Manrope', sans-serif;
     }
+
+    .bg {
+      background-image: url('assets/bg.jpg') ;
+      background-size: cover;
+    }
+
   </style>
   <!-- Font awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -64,7 +70,7 @@
             class="fa-solid fa-magnifying-glass hidden md:block border bg-white md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 rounded-full xl:text-2xl md:text-2xl lg:text-lg text-center md:p-1 xl:pt-1 cursor-pointer"></i>
           <i
             class="fa-solid fa-cart-shopping hidden md:block border bg-white md:w-10 md:h-10 lg:w-8 lg:h-8 xl:w-10 xl:h-10 rounded-full xl:text-2xl md:text-2xl lg:text-lg text-center md:p-1 xl:pt-1 cursor-pointer"></i>
-          <button class="btn hidden md:block font-extrabold text-lg rounded-full bg-[#ABEF5F]">Book Consult<i
+          <button class="btn hidden md:block font-extrabold text-lg rounded-full bg-[#ABEF5F] hover:bg-green-400 hover:transition-all duration-500 ease-in-out hover:rounded-full">Book Consult<i
               class="fa-solid fa-arrow-right-long rotate-[-45deg] md:ml-2 p-2 rounded-full bg-slate-800 text-white"></i></button>
         </div>
 
@@ -447,7 +453,7 @@
 
     <!-- article and news section start -->
     <section class="bg-[#F4F4F4] ">
-      <div class="lg:py-24 container mx-auto ">
+      <div class="lg:py-24 container mx-auto pb-8">
         <div class="text-center">
           <button class="bg-[#ABEF5F] bg-opacity-30 font-extrabold lg:text-lg py-1 px-6 rounded-full"><i
               class="fa-solid fa-arrow-right-long mr-2"></i>Rinterio News</button>
@@ -458,7 +464,8 @@
         </div>
 
         <div class="gap-8 flex flex-col sm:flex-row flex-wrap items-center justify-center mt-6 lg:mt-8 px-6 lg:px-0">
-          <div class="bg-white rounded-2xl lg:w-1/4 p-6 md:flex lg:flex-col space-y-4 md:space-y-0 lg:md:space-y-4 md:gap-6 lg:gap-0">
+          <div
+            class="bg-white rounded-2xl lg:w-1/4 p-6 md:flex lg:flex-col space-y-4 md:space-y-0 lg:md:space-y-4 md:gap-6 lg:gap-0">
             <div>
               <img src="assets/article1.png" alt="image">
             </div>
@@ -476,7 +483,8 @@
               </div>
 
               <div>
-                <h3 class="text-[#494949] text-lg font-extrabold mt-4 md:mt-2 lg:mt-6">How to choose the furniture right of your home.
+                <h3 class="text-[#494949] text-lg font-extrabold mt-4 md:mt-2 lg:mt-6">How to choose the furniture right
+                  of your home.
                 </h3>
                 <p class="mt-2">The barn house captivates with its blend of rustic charm and modern. </p>
                 <button
@@ -487,7 +495,8 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl lg:w-1/4 p-6 md:flex lg:flex-col space-y-4 md:space-y-0 lg:md:space-y-4 md:gap-6 lg:gap-0">
+          <div
+            class="bg-white rounded-2xl lg:w-1/4 p-6 md:flex lg:flex-col space-y-4 md:space-y-0 lg:md:space-y-4 md:gap-6 lg:gap-0">
             <div>
               <img src="assets/article2.png" alt="image">
             </div>
@@ -505,7 +514,8 @@
               </div>
 
               <div>
-                <h3 class="text-[#494949] text-lg font-extrabold mt-4 md:mt-2 lg:mt-6">How to choose the furniture right of your home.
+                <h3 class="text-[#494949] text-lg font-extrabold mt-4 md:mt-2 lg:mt-6">How to choose the furniture right
+                  of your home.
                 </h3>
                 <p class="mt-2">The barn house captivates with its blend of rustic charm and modern. </p>
                 <button
@@ -516,7 +526,8 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-2xl lg:w-1/4 p-6 md:flex lg:flex-col space-y-4 md:space-y-0 lg:md:space-y-4 md:gap-6 lg:gap-0">
+          <div
+            class="bg-white rounded-2xl lg:w-1/4 p-6 md:flex lg:flex-col space-y-4 md:space-y-0 lg:md:space-y-4 md:gap-6 lg:gap-0">
             <div>
               <img src="assets/article3.png" alt="image">
             </div>
@@ -534,7 +545,8 @@
               </div>
 
               <div>
-                <h3 class="text-[#494949] text-lg font-extrabold mt-4 md:mt-2 lg:mt-6">How to choose the furniture right of your home.
+                <h3 class="text-[#494949] text-lg font-extrabold mt-4 md:mt-2 lg:mt-6">How to choose the furniture right
+                  of your home.
                 </h3>
                 <p class="mt-2">The barn house captivates with its blend of rustic charm and modern. </p>
                 <button
@@ -545,10 +557,44 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
     <!-- article and news section end -->
+
+    <!-- discuss section -->
+    <section class="bg mb-24 px-6 md:px-0">
+      <div class="container mx-auto text-center py-8 md:16 lg:py-24">
+        <div>
+          <button class="py-1 px-4 rounded-full bg-[#ABEF5F] bg-opacity-40 text-[#494949] font-extrabold hover:bg-green-400 hover:transition-all duration-500 ease-in-out hover:rounded-full"><i class="fa-solid fa-arrow-right-long mr-2"></i>Let’s Connect</button>
+          <h1 class="mt-4 text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-extrabold">Let’s Discuss Next Project</h1>
+          <p class="mt-6 font-medium md:px-12 lg:px-0 lg:w-2/4 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents.</p>
+        </div>
+
+        <div class="mt-8">
+          <form id="#" class="max-w-2xl mx-auto">
+            <div class="md:flex md:gap-4">
+              <input type="text" placeholder="First Name*" class="input focus:outline-none rounded-full input-md w-full max-w-lg" />
+              <input type="text" placeholder="Last Name*" class="input focus:outline-none rounded-full input-md w-full max-w-lg mt-4 md:mt-0" />
+            </div>
+
+            <div class="md:flex md:gap-4 mt-4">
+              <input type="number" placeholder="Phone Number*" class="input focus:outline-none rounded-full input-md w-full max-w-lg" />
+              <input type="email" placeholder="Email number*" class="input focus:outline-none rounded-full input-md w-full max-w-lg mt-4 md:mt-0" />
+            </div>
+
+            <div class="mt-4">
+              <textarea placeholder="Write your message here" class="textarea focus:outline-none rounded-xl textarea-lg w-full max-w-2xl"></textarea>
+            </div>
+
+            <button class="mt-4 py-1 text-lg font-extrabold w-full rounded-full bg-[#ABEF5F] hover:bg-green-400 hover:transition-all duration-500 ease-in-out hover:rounded-full">
+              Send Mail<i class="fa-solid fa-arrow-right-long ml-2 rotate-[-45deg] rounded-full bg-black p-1 text-white"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- discuss section end-->
   </main>
   <!-- main section end -->
 
